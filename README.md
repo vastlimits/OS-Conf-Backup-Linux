@@ -8,7 +8,9 @@ This is how it's used:
 - Run the script on a Linux machine. It copies all configuration files (and/or anything else you want to backup) to a local Git repository.
 - Push the changes from a machine's local repository to GitHub.
 
-# Preparation (Once per Machine You Want to Backup)
+# 1 Preparation (Once per Machine You Want to Backup)
+
+These preparation steps only need to be done once on each machine whose configuration you want to backup. Check out how to perform a backup in the section _Performing a Backup_ below.
 
 ## Local Backup Directory
 
@@ -24,7 +26,7 @@ Clone the backup script from its public repository into the `bin` subdirectory a
     git clone https://github.com/vastlimits/OS-Conf-Backup-Linux.git /backup/bin
     chmod 774 /backup/bin/copy_files.sh
 
-#  Git Configuration
+##  Git Configuration
 
 If this is the first time you are using Git on this machine, configure your username and email:
 
@@ -78,7 +80,7 @@ Configure Git to use the new SSH key for this repository:
 
     git config core.sshCommand "ssh -i /backup/data/.ssh/id_rsa -F /dev/null"
 
-# Performing a Backup
+# 2 Performing a Backup
 
 Run the script:
 
@@ -90,6 +92,6 @@ Commit to the local repository and push to GitHub:
     git commit
     git push -u origin --all
 
-# References
+# 3 References
 
 - Inspiration: https://www.laggner.at/config-file-backup-with-git/
