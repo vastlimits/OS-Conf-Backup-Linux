@@ -8,9 +8,9 @@ This is how it's used:
 - Run the script on a Linux machine. It copies all configuration files (and/or anything else you want to backup) to a local Git repository.
 - Push the changes from a machine's local repository to GitHub.
 
-# 1 Preparation (Once per Machine You Want to Backup)
+# Preparation (Once per Machine You Want to Backup)
 
-These preparation steps only need to be done once on each machine whose configuration you want to backup. Check out how to perform a backup in the section _Performing a Backup_ below.
+These preparation steps only need to be done once on each machine whose configuration you want to backup. [Check out how to perform a backup below](#performing-a-backup).
 
 ## Local Backup Directory
 
@@ -80,7 +80,7 @@ Configure Git to use the new SSH key for this repository:
 
     git config core.sshCommand "ssh -i /backup/data/.ssh/id_rsa -F /dev/null"
 
-# 2 Performing a Backup
+# Performing a Backup
 
 Run the script:
 
@@ -92,6 +92,6 @@ Commit to the local repository and push to GitHub:
     git commit
     git push -u origin --all
 
-# 3 References
+# References
 
 - Inspiration: https://www.laggner.at/config-file-backup-with-git/
