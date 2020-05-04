@@ -10,7 +10,7 @@ This is how it's used:
 
 # Preparation (Once per Machine You Want to Backup)
 
-These preparation steps only need to be done once on each machine whose configuration you want to backup. [Check out how to perform a backup below](#performing-a-backup).
+These preparation steps only need to be done once on each machine whose configuration you want to backup. [Check out how to perform a backup](#performing-a-backup).
 
 ## Local Backup Directory
 
