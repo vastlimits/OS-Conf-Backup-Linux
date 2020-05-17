@@ -65,6 +65,7 @@ Add the GitHub remote repository and push:
 The script copies every file or directory listed in the source file `/backup/config/backup_src.txt`. Globbing (including recursive wildcard expansion) is enabled. The recommended default content for the backup source file is the following:
 
     /etc/**/*.conf
+    /etc/ssh/sshd_config
 
 Create the backup sources file:
 
@@ -84,6 +85,7 @@ Configure Git to use the new SSH key for this repository:
 
 Run the script:
 
+    cd /backup/data/
     /backup/bin/copy_files.sh
 
 Commit to the local repository and push to GitHub:
