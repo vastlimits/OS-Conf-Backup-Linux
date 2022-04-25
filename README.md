@@ -74,7 +74,7 @@ Create the backup sources file:
 
     mkdir /backup/config
     nano /backup/config/backup_src.txt
-    [paste the file content and save the file]
+    [paste the file content into nano and save the file]
 
 ## Set the SSH Key Per Repository
 
