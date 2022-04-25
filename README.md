@@ -64,8 +64,11 @@ Add the GitHub remote repository and push:
 
 The script copies every file or directory listed in the source file `/backup/config/backup_src.txt`. Globbing (including recursive wildcard expansion) is enabled. The recommended default content for the backup source file is the following:
 
+    /backup/config/backup_src.txt
     /etc/**/*.conf
     /etc/ssh/sshd_config
+    /etc/apache2/.htpasswd
+    /etc/php/**/php.ini
 
 Create the backup sources file:
 
