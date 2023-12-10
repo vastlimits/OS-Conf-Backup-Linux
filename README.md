@@ -8,6 +8,8 @@ This is how it's used:
 - Run the script on a Linux machine. It copies all configuration files (and/or anything else you want to backup) to a local Git repository.
 - Push the changes from a machine's local repository to GitHub.
 
+For more background information, see this [blog post](https://helgeklein.com/blog/linux-config-file-version-control-backup-on-github/).
+
 # Preparation (Once per Machine You Want to Backup)
 
 These preparation steps only need to be done once on each machine whose configuration you want to backup. [Check out how to perform a backup](#performing-a-backup).
