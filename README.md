@@ -58,6 +58,10 @@ Create the private GitHub repository:
 - Create a new private repository for the current machine's configuration backup.
 - Add the public key file `/backup/data/.ssh/id_rsa.pub` as a deploy key to the new repository.
 
+Work around the Git error "fatal: detected dubious ownership in repository at '/backup/data'"
+
+    git config --global --add safe.directory /backup/data
+
 Add the GitHub remote repository and push:
 
     git remote add origin git@github.com:YOUR_ORGANIZATION/YOUR_REPOSITORY.git
