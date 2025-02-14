@@ -45,7 +45,7 @@ Create a Git repository in the backup data directory:
 Create an SSH keypair to be used as GitHub deploy keys. We'll use the computername as key comment, leave the passphrase empty and move the generated keypair to the new repository. We also limit access to the owner or pushing to GitHub is blocked:
 
     cd /backup/data
-    ssh-keygen -t rsa -b 4096 -C "www1-ubuntu"
+    ssh-keygen -t rsa -b 4096 -C "COMPUTERNAME"
     mkdir /backup/data/.ssh
     mv ~/.ssh/id_* /backup/data/.ssh/
     chgrp adm .ssh/id_*
